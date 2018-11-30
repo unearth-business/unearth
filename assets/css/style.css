@@ -42,7 +42,9 @@ body {
   transform: scale(1.2, 1.2);
   text-decoration: none;
 }
-
+.navbar-nav {
+  z-index: 1;
+}
 .active {
   font-weight: bold;
 }
@@ -67,7 +69,7 @@ h1 {
   left: 0;
   right: 0;
   margin: auto;
-  
+  z-index: 0; 
 }
 .wrapper {
   flex: 1 0 auto;
