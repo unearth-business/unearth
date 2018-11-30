@@ -1,0 +1,12 @@
+main {
+  width: 80%;
+  margin: auto;
+}
+
+h2 {font-size: 2em;}
+h3 {
+  font-size: 1.3em;
+}
+p {
+  font-size: 1em;
+}
