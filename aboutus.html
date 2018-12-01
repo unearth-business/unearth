@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Eczar:400,500,600,700,800" />
   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Merienda+One" />
-  <link rel="stylesheet" href="assets/css/wickedcss.min.css" />
+  <link rel="stylesheet" href="assets/css/wickedcss.custom.css" />
   <link rel="stylesheet" href="assets/css/style.css" />
   <link rel="stylesheet" href="assets/css/aboutus.css" />
   <link rel="icon" href="assets/images/groot_icon.png" />
@@ -42,19 +42,24 @@
   </nav>
 
   <div class="wrapper" id="about-wrapper">
-    
+
     <article>
-      <h2>Our Mission</h2>
-      <div class="foldable" id="mission-foldable">
+      <button class="fold-btn" id="mission-btn" type="button">
+        <h2>Our Mission</h2>
+      </button>
+      <div class="foldable fadeIn" id="mission-foldable">
       </div>
     </article>
 
-    <article id="devteam">>
-      <h2>Development Team</h2>
-      <div class="foldable" id="devteam-foldable">
+    <article id="devteam">
+      <button class="fold-btn" id="devteam-btn" type="button">
+        <h2>Development Team</h2>
+      </button>
+      <div class="foldable fadeIn" id="devteam-foldable">
         <section>
           <h3>Andrea Minhas</h3>
-          <p>Andrea is from Chicago, IL. She attended Regis University. Her expertise is in
+          <p>
+            Andrea is from Chicago, IL. She attended Regis University. Her expertise is in
             front-end design with CSS.
           </p>
         </section>
@@ -96,12 +101,10 @@
 
   </div> <!-- end wrapper -->
 
-  <footer>
-    <div class="footer-copyright text-center py-3">© Unearth 2018</div>
-  </footer>
-
   <!-- Scripts -->
-
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="assets/javascript/foldables.js"></script>
 
 </body>
 
