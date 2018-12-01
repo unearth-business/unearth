@@ -1,12 +1,78 @@
-main {
-  width: 80%;
-  margin: auto;
+#about-wrapper {
+  flex-direction: column;
+  width: 90%;
+  margin: 5% auto;
 }
 
-h2 {font-size: 2em;}
+article {
+  width: 100%;
+  background-color: #ffffff;
+  opacity: 0.85;
+  color: black;
+  margin: 0.7em;
+  box-sizing: border-box;
+  padding: 1em;
+  border: solid #7a3e16 5px;
+  border-radius: 15px;
+}
+
+.fold-btn {
+  width: 100%;
+  padding: 0;
+  border: none;
+  background: none;
+  display: block;
+  color: #327701;
+}
+
+.fold-btn:focus,
+.fold-btn:hover h2 {
+  cursor: pointer;
+  font-weight: bolder;
+}
+
+.foldable {
+  display: none;
+}
+
+section {
+  margin: 0.5em;
+}
+h2 {
+  font-size: 1.5em;
+  text-align: left;
+  border-bottom: solid #7a3e16 2px;
+  margin-bottom: 0;
+  padding-bottom: 0.25em;
+}
 h3 {
-  font-size: 1.3em;
+  font-size: 1.2em;
+  text-align: left;
 }
 p {
   font-size: 1em;
+}
+
+.btn .btn-link .collapsed{
+  width: 100% !important;
+}
+
+@media only screen and (min-width: 660px) {
+  h2 {
+    text-align: center;
+    margin: auto;
+    width: 70%;
+  }
+  .foldable {
+    display: block;
+  }
+
+}
+
+@media only screen and (min-width: 1000px) {
+  #about-wrapper {
+    width: 60%;
+  }
+
+
 }

@@ -11,41 +11,77 @@ body {
   width: 100%;
   display: flex;
   flex-direction: column;
-  color: white;
-  z-index: 1;
+  color: #ffffff;
+  z-index: 0;
+  overflow: scroll;
+  min-height: 95vh;
 }
 
-html,
-body {
-  height: 100vh;
-}
 .navbar {
-  height: 5em;
-  padding: 0.5em 0.5em;
+  height: 5em !important;
+  padding: 0.5em 1em;
+  position: relative !important;
+  z-index: 0
+
 }
-.navbar-collapse {
-  flex-grow: 0 !important;
-}
+
 .navbar-expand-lg {
   justify-content: space-between;
+}
+
+.navbar-collapse {
+  flex-grow: 0 !important;
 }
 
 .nav-link {
   color: #4F8828 !important;
   float: right;
   margin: 0rem 1rem;
-  font-size: 1.3rem
+  font-size: 1.3rem;
+  padding-right: 0 !important;
+  line-height: 2.5em;
 }
+.nav-item {
+  height: 100%;
+}
+
 .nav-item:hover {
   color: rgb(34, 139, 34);
   transform: scale(1.2, 1.2);
   text-decoration: none;
 }
+
+.navbar-toggler,
 .navbar-nav {
-  z-index: 1;
+  z-index: 99;
+  height: 100%;
 }
+.navbar-toggler {
+  border-color: #327701 !important;
+}
+
 .active {
   font-weight: bold;
+}
+
+#hamburger-helper {
+  display: none;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 100%;
+  height: fit-content;
+  position: fixed;
+  z-index: 9999;
+  background-color: white;
+  right: 0;
+  top: 5em;
+  padding: 0.2em 3%;
+}
+
+.drop-link {
+  padding: 0;
+  height: 2em;
+  line-height: 2em;
 }
 
 #title h1 {
@@ -54,9 +90,19 @@ body {
   font-weight: bold;
   letter-spacing: 0.2rem;
   margin: 0;
-  padding-top: 0.25em;
-  vertical-align: middle;
+  font-size: 1.6em;
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 0;
+  line-height: 2.5em;
 }
+
+.navbar-brand,
 #logo {
   height: 100%;
   width: auto;
@@ -67,33 +113,43 @@ body {
 #title {
   float: none;
   text-align: center;
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: auto;
-  z-index: 0; 
 }
+
 .wrapper {
-  flex: 1 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 
-.groot {
+#index-wrapper {
+  width: 100%;
+  margin: auto;
+  flex: 1 0 auto;
+}
+.container {
+  padding: 0px;
+}
+
+#instructions h2 {
   font-family: "Eczar", serif;
   font-weight: 500;
+  text-align: center;
+  margin-bottom: 0;
 }
-
-.groot,
+#instructions p {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  margin-bottom: 0;
+}
+#instructions,
 .card-title {
   font-family: "Eczar", serif;
   font-weight: 700;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.06em;
 }
 
-.groot {
-  font-weight: 500;
+.card-body {
+  padding: 1em 0;
 }
 
 .card-sm {
@@ -107,7 +163,6 @@ body {
   background: rgba(250, 250, 250, 0);
 }
 
-
 h1,
 h2,
 h3 {
@@ -119,8 +174,8 @@ a:hover {
 }
 
 #heading-box {
-  background-color: darkgreen;
-  opacity: 0.8;
+  background-color: #406625;
+  opacity: 0.85;
   z-index: 1;
   width: 100%;
   height: fit-content;
@@ -140,6 +195,7 @@ a:hover {
   height: fit-content;
   border: solid white 5px;
   padding: 10px;
+  text-align: center;
 }
 
 .card-img-top {
@@ -162,65 +218,43 @@ footer {
 .card-title h5,
 .card-text p,
 .footer-copyright {
-
   color: #f8f9fa !important;
-
 }
 
-/* 
-#ulogo {
-  height: 70px;
-  width: 70px;
-  margin-left: 5px;
+.slideUp,
+.slideDown {
+  animation-duration: 0.7s !important;
+  width: 100% !important;
 }
 
-#ulogo2 {
-  margin-left: 20px;
-  height: 70px;
-  width: 70px;
-} */
-
-/* footer {
-  width: 100%;
-  position: fixed;
-  bottom: 0px;
-  background-color: rgb(255, 255, 255);
-  color: black;
-  justify-content: center;
-  text-align: center;
-}
-.footer-item {
-  display: inline-block;
-  line-height: 2em;
-  color: rgb(122, 62, 22);
-  font-size: 1.1em;
-} */
-
-@media only screen and (max-width: 400px) {
-  h1 {
-    font-size: 1.5em;
-  }
+@media only screen and (min-width: 440px) and (max-width: 999px) {
   .navbar {
-    height: 4em;
+    padding: 0.5em 6%;
+  }
+}
+@media only screen and (min-width: 660px) {
+  #instructions {
+    font-size: 1.3em;
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1000px) {
+
+@media only screen and (min-width: 768px) and (max-width: 999px) {
   .navbar-toggler {
     display: none;
   }
+
   .collapse {
     display: flex !important;
   }
-  /* .navbar-collapse {
-    flex-basis: auto !important;
-  } */
+
   .navbar-expand-lg .navbar-collapse {
-    display: -ms-flexbox!important;
-    display: flex!important;
+    display: -ms-flexbox !important;
+    display: flex !important;
     -ms-flex-preferred-size: auto !important;
     flex-basis: auto !important;
   }
+
   .navbar-nav {
     width: 100% !important;
     display: flex !important;
@@ -230,20 +264,19 @@ footer {
 
 @media only screen and (min-width: 1000px) {
   .navbar {
-    padding: 0.5em 5em;
+    padding: 0.5em 10%;
   }
 
+  .jumbotron {
+    padding: 5% 10%;
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 1000px) {
 
   .card-img-top {
     height: 220px;
-  }
-
-  .card-body {
-    height: 0px;
-    padding: 0.5em 0;
   }
 }
 
@@ -256,13 +289,23 @@ footer {
 }
 
 @media only screen and (max-width: 660px) {
-  .groot {
-    font-size: 1.3em;
+  #instructions {
+    font-size: 1.2em;
   }
 }
 
-@media only screen and (max-width: 360px) {
-  .groot {
+@media only screen and (max-width: 380px) {
+  #instructions {
     font-size: 1em;
+  }
+  #title h1 {
+    font-size: 1.4em;
+  }
+  .navbar {
+    height: 4em !important;
+  }
+  #hamburger-helper {
+    top: 4em;
+
   }
 }
