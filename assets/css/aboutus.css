@@ -63,7 +63,7 @@ p {
     margin: auto;
     width: 70%;
   }
-  .foldable {
+  #mission-foldable {
     display: block;
   }
 
