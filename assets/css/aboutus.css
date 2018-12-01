@@ -1,4 +1,5 @@
-main {
+#about-wrapper {
+  flex-direction: column;
   width: 80%;
   margin: auto;
 }
@@ -9,4 +10,14 @@ h3 {
 }
 p {
   font-size: 1em;
+}
+
+.card {
+  background-color: rgba(0,0,0,0.8);
+  width: 100%;
+  min-width: 100% !important;
+}
+
+.btn .btn-link .collapsed{
+  width: 100% !important;
 }
