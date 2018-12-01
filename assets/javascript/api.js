@@ -140,9 +140,9 @@ function makeNearbyCards(trailNum) {
   );
 
   newCard.append(cardImg);
+  cardBody.append(cardTitle);
+  cardBody.append(cardText);
   newCard.append(cardBody);
-  newCard.append(cardTitle);
-  newCard.append(cardText);
   $("#trails").append(spacing);
   $("#trails").append(newCard);
   for (var i = 0; i < nearbyArray.length; i++) {
@@ -170,9 +170,9 @@ function makeNearbyCards(trailNum) {
         cardText.append(`${nearbyArray[i].types[k]} `);
       }
 
+      cardBody.append(cardTitle);
+      cardBody.append(cardText);
       newCard.append(cardBody);
-      newCard.append(cardTitle);
-      newCard.append(cardText);
 
       if (i % 2 === 0) {
         $("#trails").append(newCard);
@@ -280,9 +280,9 @@ function makeTrailCards() {
     cardDropdown.append(dropdownButton);
     cardDropdown.append(dropdownMenu);
     newCard.append(cardImg);
+    cardBody.append(cardTitle);
+    cardBody.append(cardText);
     newCard.append(cardBody);
-    newCard.append(cardTitle);
-    newCard.append(cardText);
     newCard.append(cardDropdown);
     //setting up an if else statement to put spacing between the cards
     if (i % 2 === 0) {

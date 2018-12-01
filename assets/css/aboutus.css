@@ -4,19 +4,28 @@
   margin: auto;
 }
 
+section {
+  width: 80%;
+  background-color: #ffffff;
+  opacity: 0.8;
+  color: black;
+  margin: 0.7em;
+  box-sizing: border-box;
+  padding: 1em;
+  border: solid #7a3e16 5px;
+  border-radius: 15px;
+}
 h2 {font-size: 2em;}
 h3 {
   font-size: 1.3em;
+  text-align: left;
+  
 }
 p {
   font-size: 1em;
 }
 
-.card {
-  background-color: rgba(0,0,0,0.8);
-  width: 100%;
-  min-width: 100% !important;
-}
+
 
 .btn .btn-link .collapsed{
   width: 100% !important;
