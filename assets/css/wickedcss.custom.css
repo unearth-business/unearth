@@ -1,14 +1,45 @@
-.slideUp {
-  animation-name: slideUp;
-  -webkit-animation-name: slideUp;
+.navOut {
+  animation-name: navOut;
+  -webkit-animation-name: navOut;
 
-  animation-duration: 1s;
-  -webkit-animation-duration: 1s;
+  animation-duration: 0.5s;
+  -webkit-animation-duration: 0.5s;
 
   animation-timing-function: ease;
   -webkit-animation-timing-function: ease;
 
 }
+
+@keyframes navOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes navOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.slideUp {
+  animation-name: slideUp;
+  -webkit-animation-name: slideUp;
+
+  animation-duration: 2s;
+  -webkit-animation-duration: 2s;
+
+  animation-timing-function: ease;
+  -webkit-animation-timing-function: ease;
+
+}
+
 
 @keyframes slideUp {
   0% {
@@ -21,6 +52,7 @@
     opacity: 1;
   }
 }
+
 
 @-webkit-keyframes slideUp {
   0% {
@@ -38,8 +70,8 @@
   animation-name: slideDown;
   -webkit-animation-name: slideDown;
 
-  animation-duration: 1s;
-  -webkit-animation-duration: 1s;
+  animation-duration: 0.7s;
+  -webkit-animation-duration: 0.7s;
 
   animation-timing-function: ease;
   -webkit-animation-timing-function: ease;
@@ -71,33 +103,73 @@
 }
 
 
-.fadeIn{
-	animation-name: fadeIn;
-	-webkit-animation-name: fadeIn;	
+.fadeIn {
+  animation-name: fadeIn;
+  -webkit-animation-name: fadeIn;
 
-	animation-duration: 1s;	
-	-webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
 
-	animation-timing-function: ease;	
-	-webkit-animation-timing-function: ease;	
+  animation-timing-function: ease;
+  -webkit-animation-timing-function: ease;
 
-	visibility: visible !important;		
+  visibility: visible !important;
 }
 
 @keyframes fadeIn {
-	0% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}	
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 @-webkit-keyframes fadeIn {
-	0% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.resultsUp {
+  animation-name: resultsUp;
+  -webkit-animation-name: resultsUp;
+
+  animation-duration: 2s;
+  -webkit-animation-duration: 2s;
+
+  animation-timing-function: ease;
+  -webkit-animation-timing-function: ease;
+
+}
+
+
+@keyframes resultsUp {
+  0% {
+    transform: translateY(100%);
+    opacity: 0.2;
+  }
+
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+
+@-webkit-keyframes resultsUp {
+  0% {
+    -webkit-transform: translateY(100%);
+    opacity: 0.2;
+  }
+
+  100% {
+    -webkit-transform: translateY(0%);
+    opacity: 1;
+  }
 }

@@ -11,7 +11,7 @@ body {
   width: 100%;
   display: flex;
   flex-direction: column;
-  color: white;
+  color: #ffffff;
   z-index: 0;
   overflow: scroll;
   min-height: 95vh;
@@ -40,7 +40,6 @@ body {
   font-size: 1.3rem;
   padding-right: 0 !important;
   line-height: 2.5em;
-  height: 100%;
 }
 .nav-item {
   height: 100%;
@@ -63,6 +62,26 @@ body {
 
 .active {
   font-weight: bold;
+}
+
+#hamburger-helper {
+  display: none;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 100%;
+  height: fit-content;
+  position: fixed;
+  z-index: 9999;
+  background-color: white;
+  right: 0;
+  top: 5em;
+  padding: 0.2em 3%;
+}
+
+.drop-link {
+  padding: 0;
+  height: 2em;
+  line-height: 2em;
 }
 
 #title h1 {
@@ -155,8 +174,8 @@ a:hover {
 }
 
 #heading-box {
-  background-color: darkgreen;
-  opacity: 0.8;
+  background-color: #406625;
+  opacity: 0.85;
   z-index: 1;
   width: 100%;
   height: fit-content;
@@ -259,11 +278,6 @@ footer {
   .card-img-top {
     height: 220px;
   }
-
-  .card-body {
-    height: 0px;
-    padding: 0.5em 0;
-  }
 }
 
 @media only screen and (max-width: 780px) {
@@ -289,5 +303,9 @@ footer {
   }
   .navbar {
     height: 4em !important;
+  }
+  #hamburger-helper {
+    top: 4em;
+
   }
 }

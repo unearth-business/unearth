@@ -7,7 +7,7 @@
 article {
   width: 100%;
   background-color: #ffffff;
-  opacity: 0.8;
+  opacity: 0.85;
   color: black;
   margin: 0.7em;
   box-sizing: border-box;
@@ -24,6 +24,17 @@ article {
   display: block;
   color: #327701;
 }
+
+.fold-btn:focus,
+.fold-btn:hover h2 {
+  cursor: pointer;
+  font-weight: bolder;
+}
+
+.foldable {
+  display: none;
+}
+
 section {
   margin: 0.5em;
 }
@@ -46,18 +57,22 @@ p {
   width: 100% !important;
 }
 
-@media only screen and (min-width: 1000px) {
-  #about-wrapper {
-    width: 60%;
-  }
-
-
-}
-
 @media only screen and (min-width: 660px) {
   h2 {
     text-align: center;
     margin: auto;
     width: 70%;
   }
+  .foldable {
+    display: block;
+  }
+
+}
+
+@media only screen and (min-width: 1000px) {
+  #about-wrapper {
+    width: 60%;
+  }
+
+
 }
