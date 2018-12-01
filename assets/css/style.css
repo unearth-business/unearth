@@ -290,12 +290,15 @@ footer {
 }
 
 @media only screen and (max-width: 660px) {
+  body {
+    background-image: url("../images/mobile5.jpg");
+  }
   #instructions {
     font-size: 1.2em;
   }
 }
 
-@media only screen and (max-width: 380px) {
+@media only screen and (max-width: 400x) {
   #instructions {
     font-size: 1em;
   }
@@ -304,6 +307,7 @@ footer {
   }
   .navbar {
     height: 4em !important;
+    font-size: 0.8em
   }
   #hamburger-helper {
     top: 4em;
