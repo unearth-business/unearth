@@ -19,11 +19,13 @@ $(window).width < 660 ? isMobile = true : isMobile = false;
 
 function setImages() {
   if (isMobile) {
+    imgUrlArray = [];
     for (var i = 0; i < numImages; i++) {
       imgUrlArray.push(`url('assets/images/mobile${i}.jpg')`);
     }
   } else {
     //initialize imgArray with using this naming convention: 'background#.jpg'
+    imgUrlArray = [];
     for (var i = 0; i < numImages; i++) {
       imgUrlArray.push(`url('assets/images/hiking${i}.jpg')`);
     }
@@ -54,6 +56,7 @@ $(document).ready(function() {
     //if the viewport changes from mobile to large or visa versa, setImage()
     if ($(window).width() < 660 && isMobile === false) {
       isMobile = true;
+      console.log("is mobile: " + isMobile);
       setImages();
     }
     if ($(window).width() >= 660 && isMobile === true) {
