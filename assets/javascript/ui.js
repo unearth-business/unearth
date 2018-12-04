@@ -67,21 +67,22 @@ function getMaxTrailResults() {
   var userIn = formMaxTrailResults.val();
   if (userIn === "" || userIn === undefined) {
     sessionStorage.setItem("maxTrailResults", defaultMaxTrailResults);
-  }
-  userIn = parseInt(userIn);
-  if (userIn < 0) {
-    invalidInput(
-      formMaxTrailResults,
-      "Invalid Input: Min Trail Length cannot be less than 0"
-    );
-  } else if (userIn > maxValueMaxTrailResults) {
-    console.log(
-      "Warning: Max Trail Results exceeded limit, set to max of " +
-        maxValueMaxTrailResults
-    );
-    sessionStorage.setItem("maxTrailResults", maxValueMaxTrailResults);
   } else {
-    sessionStorage.setItem("maxTrailResults", userIn);
+    userIn = parseInt(userIn);
+    if (userIn < 0) {
+      invalidInput(
+        formMaxTrailResults,
+        "Invalid Input: Min Trail Length cannot be less than 0"
+      );
+    } else if (userIn > maxValueMaxTrailResults) {
+      console.log(
+        "Warning: Max Trail Results exceeded limit, set to max of " +
+          maxValueMaxTrailResults
+      );
+      sessionStorage.setItem("maxTrailResults", maxValueMaxTrailResults);
+    } else {
+      sessionStorage.setItem("maxTrailResults", userIn);
+    }
   }
 }
 
