@@ -1,139 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>About Us</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Eczar:400,500,600,700,800"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Merienda+One"
+    />
+    <link rel="stylesheet" href="assets/css/wickedcss.custom.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/aboutus.css" />
+    <link rel="icon" href="assets/images/groot_icon.png" />
+  </head>
 
-<head>
-  <title>About Us</title>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Eczar:400,500,600,700,800" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merienda+One" />
-  <link rel="stylesheet" href="assets/css/wickedcss.custom.css" />
-  <link rel="stylesheet" href="assets/css/style.css" />
-  <link rel="stylesheet" href="assets/css/aboutus.css" />
-  <link rel="icon" href="assets/images/groot_icon.png" />
-</head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="index.html">
+        <img id="logo" src="assets/images/logo1.png" alt="" />
+      </a>
+      <a class="navbar-brand" id="title" href="index.html">
+        <h1>UNEARTH</h1>
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        id="hamburger"
+        data-toggle="false"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-<body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="index.html">
-      <img id="logo" src="assets/images/logo1.png" alt="" />
-    </a>
-    <a class="navbar-brand" id="title" href="index.html">
-      <h1>UNEARTH</h1>
-    </a>
-    <button class="navbar-toggler" type="button" id="hamburger" data-toggle="false">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbar-content">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="index.html">Home</a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="aboutus.html">About Us</a>
-        </li>
-      </ul>
+      <div class="collapse navbar-collapse" id="navbar-content">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="aboutus.html">About Us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- hamburger-helper content dropsdown with the navbar-toggler -->
+    <div id="hamburger-helper">
+      <a class="nav-link drop-link" href="index.html">Home</a>
+      <a class="nav-link drop-link" href="aboutus.html">About Us</a>
     </div>
-  </nav>
-  <!-- hamburger-helper content dropsdown with the navbar-toggler -->
-  <div id="hamburger-helper">
-    <a class="nav-link drop-link" href="index.html">Home</a>
-    <a class="nav-link drop-link" href="aboutus.html">About Us</a>
-  </div>
 
-  <div class="wrapper" id="about-wrapper">
+    <div class="wrapper" id="about-wrapper">
+      <article id="mission">
+        <div class="fold-btn" id="mission-btn"><h2>Our Mission</h2></div>
+        <div class="foldable fadeIn" id="mission-foldable">
+          <section>
+            <p>
+              Our love for the outdoors inspired us to create this convinient
+              app. Before Unearth, there was no easy way to find hiking trails
+              with a simple destination search. We're all used to government
+              sites that only contain a list of state or national parks, with no
+              directions, trail details, or nearby necessities.
+            </p>
+            <p>
+              Unearth allows you to enter any location in the US or Canada, and
+              see all the hiking trails, and gives you the option to filter your
+              results to find the perfect trail for you. You can see trail
+              difficulty, ratings, length, get directions, and more, all with
+              one click.
+            </p>
+            <p>
+              Whether need a bite to eat, a roof over your head, or a ride to
+              the next destination, Unearth has you covered. Each trail has easy
+              links to public tranist, nearby restaurants, and hotels.
+            </p>
+            <p>
+              Unearth your path with our powerfully simple application, so you
+              can spent more time on your adventure and less time visiting
+              dozens of websites to find the same information.
+            </p>
+          </section>
+        </div>
+      </article>
 
-    <article id="mission">
-      <div class="fold-btn" id="mission-btn">
-        <h2>Our Mission</h2>
-      </div>
-      <div class="foldable fadeIn" id="mission-foldable">
-        <section>
-          <p>
-            Our love for the outdoors inspired us to create this convinient app. Before Unearth,
-            there was no easy way to find hiking trails with a simple destination search.
-            We're all used to government sites that only contain a list of state or national
-            parks, with no directions, trail details, or nearby necessities.
-          </p>
-          <p>
-            Unearth allows you to enter any location in the US or Canada, and see all the hiking trails,
-            and gives you the option to filter your results to find the perfect trail for you. You can see
-            trail difficulty, ratings, length, get directions, and more, all with one click.
-          </p>
-          <p>
-            Whether need a bite to eat, a roof over your head, or a ride to the next destination,
-            Unearth has you covered. Each trail has easy links to public tranist, nearby restaurants,
-            and hotels.
-          </p>
-          <p>
-            Unearth your path with our powerfully simple application, so you can spent more time on your
-            adventure and less time visiting dozens of websites to find the same information.
-          </p>
-        </section>
-      </div>
-    </article>
+      <article id="devteam">
+        <div class="fold-btn" id="devteam-btn"><h2>Development Team</h2></div>
+        <div class="foldable fadeIn" id="devteam-foldable">
+          <section>
+            <h3>Andrea Minhas</h3>
+            <p>
+              Andrea is from Chicago, IL. She attended Regis University. Her
+              expertise is in front-end design with CSS.
+            </p>
+            <a href="https://github.com/andreaMT15">
+              <i class="fab fa-github-square"> </i
+            ></a>
+            <a href="https://www.linkedin.com/in/andreaminhas/">
+              <i class="fab fa-linkedin"></i
+            ></a>
+          </section>
 
-    <article id="devteam">
-      <div class="fold-btn" id="devteam-btn">
-        <h2>Development Team</h2>
-      </div>
-      <div class="foldable fadeIn" id="devteam-foldable">
-        <section>
-          <h3>Andrea Minhas</h3>
-          <p>
-            Andrea is from Chicago, IL. She attended Regis University. Her expertise is in
-            front-end design with CSS.
-          </p>
-        </section>
+          <section>
+            <h3>Hannah Willis</h3>
+            <p>
+              Hannah is from Greensboro, North Carolina. She attended Vanderbilt
+              University. Her favorite language is JavaScript.
+            </p>
+            <a href="https://github.com/hannahwillis1">
+              <i class="fab fa-github-square"> </i
+            ></a>
+            <a href="https://www.linkedin.com/in/hannah-willis-55221477/">
+              <i class="fab fa-linkedin"></i
+            ></a>
+          </section>
 
-        <section>
-          <h3>Hannah Willis</h3>
-          <p>
-            Hannah is from Greensboro, North Carolina. She attended Vanderbilt
-            University. Her favorite language is JavaScript.
-          </p>
-        </section>
+          <section>
+            <h3>Nathan Walker</h3>
+            <p>
+              Nathan is from Olympia, WA. He attended Puget Sound. His expertise
+              is in back-end programming including APIs and Databases.
+            </p>
+            <a href="https://github.com/nathanw88">
+              <i class="fab fa-github-square"> </i
+            ></a>
+            <a href="https://www.linkedin.com/in/nathan-walker-65561060/">
+              <i class="fab fa-linkedin"></i
+            ></a>
+          </section>
 
-        <section>
-          <h3>Nathan Walker</h3>
-          <p>
-            Nathan is from Olympia, WA. He attended Puget Sound. His expertise is in back-end
-            programming including APIs and Databases.
-          </p>
-        </section>
+          <section>
+            <h3>Thomas Roman</h3>
+            <p>
+              Thomas is from Chicago, IL. He attended University of Illinois.
+              His expertise is in user experience design and animation.
+            </p>
+            <a href="https://github.com/tomroman">
+              <i class="fab fa-github-square"> </i
+            ></a>
+            <i class="fab fa-linkedin"></i>
+          </section>
 
-        <section>
-          <h3>Thomas Roman</h3>
-          <p>
-            Thomas is from Chicago, IL. He attended University of Illinois. His
-            expertise is in user experience design and animation.
-          </p>
-        </section>
+          <section>
+            <h3>Steve Lucas</h3>
+            <p>
+              Steve is from West Chicago, IL. He attended Lake Superior State
+              University and Grand Valley State Universtiy. His expertise is in
+              application development in JavaScript and Java.
+            </p>
+            <a href="https://github.com/SteveLucasCS">
+              <i class="fab fa-github-square"> </i
+            ></a>
+            <a href="https://www.linkedin.com/in/steve-lucas-it/">
+              <i class="fab fa-linkedin"></i
+            ></a>
+          </section>
+        </div>
+        <!-- end foldable div -->
+      </article>
+    </div>
+    <!-- end wrapper -->
 
-        <section>
-          <h3>Steve Lucas</h3>
-          <p>
-            Steve is from West Chicago, IL. He attended Lake Superior State University
-            and Grand Valley State Universtiy. His expertise is in application development
-            in JavaScript and Java.
-          </p>
-        </section>
-      </div> <!-- end foldable div -->
-    </article>
-
-  </div> <!-- end wrapper -->
-
-  <!-- Scripts -->
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
-  <script src="assets/javascript/navhelper.js"></script>
-  <script src="assets/javascript/hiking_backgrounds.js"></script>
-  <script src="assets/javascript/foldables.js"></script>
-
-</body>
-
+    <!-- Scripts -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/javascript/navhelper.js"></script>
+    <script src="assets/javascript/hiking_backgrounds.js"></script>
+    <script src="assets/javascript/foldables.js"></script>
+  </body>
 </html>
