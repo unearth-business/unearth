@@ -21,8 +21,7 @@ body {
   height: 5em !important;
   padding: 0.5em 1em;
   position: relative !important;
-  z-index: 0
-
+  z-index: 0;
 }
 
 .navbar-expand-lg {
@@ -34,7 +33,7 @@ body {
 }
 
 .nav-link {
-  color: #4F8828 !important;
+  color: #4f8828 !important;
   float: right;
   margin: 0rem 1rem;
   font-size: 1.3rem;
@@ -138,7 +137,9 @@ body {
   margin-bottom: 0;
 }
 #instructions p {
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
   margin-bottom: 0;
 }
 #instructions,
@@ -150,6 +151,11 @@ body {
 
 .card-body {
   padding: 1em 0;
+}
+
+.card-title,
+b {
+  color: #ebbb5e;
 }
 
 .card-sm {
@@ -208,8 +214,7 @@ a:hover {
   margin-block-end: 15px;
   padding-bottom: 15px;
   color: #ffffff;
-  background-color: #ae6029;
-
+  background-color: #a9541b;
 }
 
 footer {
@@ -238,7 +243,6 @@ footer {
     font-size: 1.3em;
   }
 }
-
 
 @media only screen and (min-width: 768px) and (max-width: 999px) {
   .navbar-toggler {
@@ -275,14 +279,12 @@ footer {
 }
 
 @media only screen and (max-width: 1000px) {
-
   .card-img-top {
     height: 220px;
   }
 }
 
 @media only screen and (max-width: 780px) {
-
   .card-img-top {
     height: auto;
     max-height: 320px;
@@ -307,10 +309,9 @@ footer {
   }
   .navbar {
     height: 4em !important;
-    font-size: 0.8em
+    font-size: 0.8em;
   }
   #hamburger-helper {
     top: 4em;
-
   }
 }
